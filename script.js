@@ -26,22 +26,22 @@ document.addEventListener('DOMContentLoaded', () => {
         displayStudents();
     });
 
-    studentList.addEventListener('click', (e) => {
-        if (e.target.tagName === 'BUTTON') {
-            const index = e.target.parentElement.dataset.index;
-            if (e.target.textContent === 'Edit') {
-                editIndex = index;
-                const student = students[index];
-                document.getElementById('name').value = student.name;
-                document.getElementById('regNo').value = student.regNo;
-                document.getElementById('grade').value = student.grade;
-            } else if (e.target.textContent === 'Delete') {
-                students.splice(index, 1);
-                localStorage.setItem('students', JSON.stringify(students));
-                displayStudents();
-            }
-        }
-    });
+    // studentList.addEventListener('click', (e) => {
+    //     if (e.target.tagName === 'BUTTON') {
+    //         const index = e.target.parentElement.dataset.index;
+    //         if (e.target.textContent === 'Edit') {
+    //             editIndex = index;
+    //             const student = students[index];
+    //             document.getElementById('name').value = student.name;
+    //             document.getElementById('regNo').value = student.regNo;
+    //             document.getElementById('grade').value = student.grade;
+    //         } else if (e.target.textContent === 'Delete') {
+    //             students.splice(index, 1);
+    //             localStorage.setItem('students', JSON.stringify(students));
+    //             displayStudents();
+    //         }
+    //     }
+    // });
 
     searchBar.addEventListener('input', () => {
         const searchText = searchBar.value.toLowerCase();
