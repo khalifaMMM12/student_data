@@ -43,14 +43,6 @@ document.addEventListener('DOMContentLoaded', () => {
          }
      });
 
-    searchBar.addEventListener('input', () => {
-        const searchText = searchBar.value.toLowerCase();
-        const filteredStudents = students.filter(student => 
-            student.name.toLowerCase().includes(searchText)
-        );
-        displayStudents(filteredStudents);
-    });
-
     function displayStudents(filteredStudents = students) {
         studentList.innerHTML = '';
         filteredStudents.forEach((student, index) => {
