@@ -48,7 +48,7 @@ document.addEventListener('DOMContentLoaded', () => {
         filteredStudents.forEach((student, index) => {
             const studentItem = document.createElement('li');
             studentItem.className = 'student-item';
-            studentItem.dataset.index = index;
+            // studentItem.dataset.index = index;
             studentItem.innerHTML = `
                 ${student.name} (${student.regNo} Reg No., Grade: ${student.grade})
                 <button>Edit</button>
