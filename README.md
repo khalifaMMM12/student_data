@@ -1,5 +1,5 @@
 # student_data
-##Opensource Software Development Group 3
+#Opensource Software Development Group 3
 
 ## Project Overview
 The Student Data Management Page is a simple web application that allows users to view, add, edit, and delete student information. The data is stored locally in the browser, so there is no need for a backend. This project uses HTML, CSS, and JavaScript.
