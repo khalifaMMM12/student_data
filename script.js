@@ -52,7 +52,7 @@ document.addEventListener('DOMContentLoaded', () => {
             studentItem.innerHTML = `
                 ${student.name} (${student.regNo} Reg No., Grade: ${student.grade})
                 <button>Edit</button>
-                <button>Delete</button>
+                <button>Delete.</button>
             `;
             studentList.appendChild(studentItem);
         });
